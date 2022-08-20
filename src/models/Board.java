@@ -7,6 +7,10 @@ public class Board {
         squares = new Square[40];
     }
 
+    Square getSquare(Square location, int i) {
+        return getSquare(findSquareIndex(location) + i);
+    }
+
     Square getSquare(int i) {
         return squares[i];
     }

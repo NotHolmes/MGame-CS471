@@ -21,7 +21,7 @@ public class Player {
             fvTotal += dice[i].faceValue;
         }
 
-        newLoc = board.getSquare(board.findSquareIndex(oldLoc) + fvTotal);
+        newLoc = board.getSquare(oldLoc, fvTotal);
         piece.setLocation(newLoc);
     }
 }
